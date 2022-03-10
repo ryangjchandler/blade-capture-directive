@@ -70,7 +70,7 @@ The list of arguments can be treated like any set of arguments defined on a func
 {{ $hello('Taylor', 'Yo, ') }}
 ```
 
-The above code will now output `Hello, Ryan!` as well as `Yo, Taylor!`.
+The above code will now output `Hello, Ryan!` as well as `Yo, Taylor!`. This is really cool, I know!
 
 ## Testing
 
