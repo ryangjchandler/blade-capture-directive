@@ -54,3 +54,18 @@ it('can capture a block of code with a trailing comma', function () {
     expect($result)
         ->toContain('Hello Ryan!');
 });
+
+it('supports default arguments', function () {
+    $result = Blade::render(<<<blade
+        @capture(\$hello, \$name, \$greeting = 'Hello')
+            {{ \$greeting }} {{ \$name }}!
+        @endcapture
+
+        {{ \$hello('Ryan') }}
+        {{ \$hello('Dan', 'Yo') }}
+    blade);
+
+    expect($result)
+        ->toContain('Hello Ryan!')
+        ->toContain('Yo Dan!');
+});
