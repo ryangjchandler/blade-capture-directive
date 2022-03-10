@@ -2,24 +2,21 @@
 
 namespace RyanChandler\BladeCaptureDirective;
 
+use Illuminate\Support\Facades\Blade;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RyanChandler\BladeCaptureDirective\Commands\BladeCaptureDirectiveCommand;
 
 class BladeCaptureDirectiveServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
-        $package
-            ->name('blade-capture-directive')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_blade-capture-directive_table')
-            ->hasCommand(BladeCaptureDirectiveCommand::class);
+        $package->name('blade-capture-directive');
+    }
+
+    public function packageBooted()
+    {
+        Blade::directive('capture', fn (string $expression) => BladeCaptureDirective::open($expression));
+
+        Blade::directive('endcapture', fn () => BladeCaptureDirective::close());
     }
 }
