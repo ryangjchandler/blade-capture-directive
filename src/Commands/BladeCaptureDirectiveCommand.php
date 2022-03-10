@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace RyanChandler\BladeCaptureDirective\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class BladeCaptureDirectiveCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'blade-capture-directive';
 
     public $description = 'My command';
 
