@@ -2,9 +2,9 @@
 
 namespace RyanChandler\BladeCaptureDirective;
 
+use RyanChandler\BladeCaptureDirective\Commands\BladeCaptureDirectiveCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RyanChandler\BladeCaptureDirective\Commands\BladeCaptureDirectiveCommand;
 
 class BladeCaptureDirectiveServiceProvider extends PackageServiceProvider
 {
