@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Auth\Events\OtherDeviceLogout;
 use Illuminate\Support\Facades\Blade;
 
 it('can capture a block of code', function () {
