@@ -14,7 +14,7 @@ final class BladeCaptureDirective
 
         return "
             <?php {$name} = (function ({$args}) {
-                extract(\$this->environment);
+                extract(array_merge(\$this->environment, get_defined_vars()));
                 ob_start();
             ?>
         ";

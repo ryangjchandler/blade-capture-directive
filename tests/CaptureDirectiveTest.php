@@ -84,3 +84,16 @@ it('captures the external environment', function () {
     blade)
         ->toContain('Hello, Ryan!');
 });
+
+it('captures the external environment and capture block arguments take precedence', function () {
+    expectBlade(<<<blade
+        @php(\$name = 'Ryan')
+
+        @capture(\$hello, \$name)
+            Hello, {{ \$name }}!
+        @endcapture
+
+        {{ \$hello('John') }}
+    blade)
+        ->toContain('Hello, John!');
+});
