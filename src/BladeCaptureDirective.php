@@ -13,7 +13,8 @@ final class BladeCaptureDirective
             [$expression, ''];
 
         return "
-            <?php {$name} = function ({$args}) {
+            <?php {$name} = (function ({$args}) {
+                extract(array_merge(\$this->environment, get_defined_vars()));
                 ob_start();
             ?>
         ";
@@ -22,7 +23,13 @@ final class BladeCaptureDirective
     public static function close()
     {
         return "
-            <?php return new \Illuminate\Support\HtmlString(ob_get_clean()); }; ?>
+            <?php
+                return new \Illuminate\Support\HtmlString(ob_get_clean());
+            })->bindTo(new class(get_defined_vars()) {
+                public function __construct(
+                    public array \$environment = []
+                ) {}
+            }); ?>
         ";
     }
 }
