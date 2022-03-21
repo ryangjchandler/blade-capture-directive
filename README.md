@@ -86,6 +86,8 @@ All captured blocks will inherit the parent scope, just like a regular partial w
 {{ $hello() }}
 ```
 
+> If your captured block has a parameter with the same name as a predefined variable from the inherited scope, the block's parameter will always take precedence.
+
 ## Testing
 
 ```bash
