@@ -72,6 +72,20 @@ The list of arguments can be treated like any set of arguments defined on a func
 
 The above code will now output `Hello, Ryan!` as well as `Yo, Taylor!`. This is really cool, I know!
 
+### Inheriting scope
+
+All captured blocks will inherit the parent scope, just like a regular partial would in Blade. This means you can use any data passed to the view without having to pass it through to the block manually.
+
+```blade
+@php($name = 'Ryan')
+
+@capture($hello)
+    Hello, {{ $name }}!
+@endcapture
+
+{{ $hello() }}
+```
+
 ## Testing
 
 ```bash
