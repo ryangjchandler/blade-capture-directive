@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\Blade;
-use Pest\Expectation;
 
 beforeEach(function () {
     Artisan::call('view:clear');
