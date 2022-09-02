@@ -8,13 +8,6 @@ beforeEach(function () {
     Artisan::call('view:clear');
 });
 
-function expectBlade(string $blade, array $data = []): Expectation
-{
-    $blade = Blade::render($blade, $data, deleteCachedView: true);
-
-    return expect($blade);
-}
-
 it('can capture a block of code', function () {
     expectBlade(<<<blade
         @capture(\$hello, \$name)
