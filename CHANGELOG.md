@@ -2,6 +2,10 @@
 
 All notable changes to `blade-capture-directive` will be documented in this file.
 
+## v0.2.2 - 2022-09-02
+
+**Full Changelog**: https://github.com/ryangjchandler/blade-capture-directive/compare/v0.2.1...v0.2.2
+
 ## v0.2.1 - 2022-08-23
 
 ### What's Changed
