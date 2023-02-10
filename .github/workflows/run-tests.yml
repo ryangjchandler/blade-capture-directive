@@ -25,7 +25,7 @@ jobs:
             testbench: ^6.23
         exclude:
           - php: 8.0
-            laravel: 10
+            laravel: 10.*
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
 
