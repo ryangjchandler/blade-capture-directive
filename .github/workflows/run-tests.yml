@@ -21,7 +21,6 @@ jobs:
             testbench: 8.*
           - laravel: 9.*
             testbench: ^7.22
-            stability: prefer-lowest
           - laravel: 8.*
             testbench: ^6.23
         exclude:
