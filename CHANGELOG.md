@@ -2,6 +2,19 @@
 
 All notable changes to `blade-capture-directive` will be documented in this file.
 
+## v0.3.0 - 2023-02-14
+
+### What's Changed
+
+- Add Laravel 10 support by @jyrkidn in https://github.com/ryangjchandler/blade-capture-directive/pull/12
+- Remove support for Laravel 8
+
+### New Contributors
+
+- @jyrkidn made their first contribution in https://github.com/ryangjchandler/blade-capture-directive/pull/12
+
+**Full Changelog**: https://github.com/ryangjchandler/blade-capture-directive/compare/v0.2.2...v0.3.0
+
 ## v0.2.2 - 2022-09-02
 
 **Full Changelog**: https://github.com/ryangjchandler/blade-capture-directive/compare/v0.2.1...v0.2.2
