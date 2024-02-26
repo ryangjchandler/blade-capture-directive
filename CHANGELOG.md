@@ -2,6 +2,20 @@
 
 All notable changes to `blade-capture-directive` will be documented in this file.
 
+## v1.0.0 - 2024-02-26
+
+### What's Changed
+
+* Laravel 11 support, drop Laravel 9 and PHP 8.0 support by @danharrin in https://github.com/ryangjchandler/blade-capture-directive/pull/19
+* chore(deps): bump dependabot/fetch-metadata from 1.3.6 to 1.5.0 by @dependabot in https://github.com/ryangjchandler/blade-capture-directive/pull/14
+* chore(deps): bump dependabot/fetch-metadata from 1.5.0 to 1.5.1 by @dependabot in https://github.com/ryangjchandler/blade-capture-directive/pull/15
+* chore(deps): bump dependabot/fetch-metadata from 1.5.1 to 1.6.0 by @dependabot in https://github.com/ryangjchandler/blade-capture-directive/pull/16
+* chore(deps): bump ramsey/composer-install from 1 to 2 by @dependabot in https://github.com/ryangjchandler/blade-capture-directive/pull/10
+* chore(deps): bump actions/checkout from 2 to 4 by @dependabot in https://github.com/ryangjchandler/blade-capture-directive/pull/17
+* chore(deps): bump stefanzweifel/git-auto-commit-action from 4 to 5 by @dependabot in https://github.com/ryangjchandler/blade-capture-directive/pull/18
+
+**Full Changelog**: https://github.com/ryangjchandler/blade-capture-directive/compare/v0.3.0...v1.0.0
+
 ## v0.3.0 - 2023-02-14
 
 ### What's Changed
