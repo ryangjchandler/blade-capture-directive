@@ -1,8 +1,8 @@
 # Create inline partials in your Blade templates with ease.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ryangjchandler/blade-capture-directive.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/blade-capture-directive)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/ryangjchandler/blade-capture-directive/run-tests?label=tests)](https://github.com/ryangjchandler/blade-capture-directive/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/ryangjchandler/blade-capture-directive/Check%20&%20fix%20styling?label=code%20style)](https://github.com/ryangjchandler/blade-capture-directive/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/ryangjchandler/blade-capture-directive/run-tests.yml?label=tests)](https://github.com/ryangjchandler/blade-capture-directive/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ryangjchandler/blade-capture-directive/php-cs-fixer.yml?label=code%20style)](https://github.com/ryangjchandler/blade-capture-directive/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/ryangjchandler/blade-capture-directive.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/blade-capture-directive)
 
 This package introduces a new `@capture` directive that allows you to capture small parts of your Blade templates and re-use them later on without needing to extract them into partials.
