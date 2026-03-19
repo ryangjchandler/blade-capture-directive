@@ -2,6 +2,19 @@
 
 All notable changes to `blade-capture-directive` will be documented in this file.
 
+## v1.1.1 - 2026-03-19
+
+### What's Changed
+
+* docs: correct outdated Shields.io badge URLs by @AamirSohailKmAs in https://github.com/ryangjchandler/blade-capture-directive/pull/27
+* Add support for Laravel 13 by @ryangjchandler in https://github.com/ryangjchandler/blade-capture-directive/pull/33
+
+### New Contributors
+
+* @AamirSohailKmAs made their first contribution in https://github.com/ryangjchandler/blade-capture-directive/pull/27
+
+**Full Changelog**: https://github.com/ryangjchandler/blade-capture-directive/compare/v1.1.0...v1.1.1
+
 ## v1.1.0 - 2025-02-25
 
 ### What's Changed
